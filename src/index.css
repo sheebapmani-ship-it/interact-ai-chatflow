@@ -65,15 +65,15 @@
 
 @layer components {
   .glass-card {
-    @apply rounded-xl border border-border/50 bg-card/60 backdrop-blur-xl;
-    box-shadow: 0 0 30px -10px hsl(var(--glow) / 0.08);
+    @apply rounded-xl border border-border/50 bg-card/80 backdrop-blur-xl;
+    box-shadow: 0 4px 24px -8px hsl(24 60% 35% / 0.06);
   }
   .glass-card-hover {
     @apply glass-card transition-all duration-300;
   }
   .glass-card-hover:hover {
     border-color: hsl(var(--primary) / 0.3);
-    box-shadow: 0 0 40px -10px hsl(var(--glow) / 0.15);
+    box-shadow: 0 8px 32px -8px hsl(24 60% 35% / 0.1);
     transform: translateY(-2px);
   }
   .gradient-text {
@@ -89,7 +89,7 @@
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, hsl(var(--primary) / 0.5), hsl(var(--accent) / 0.5));
+    background: linear-gradient(135deg, hsl(var(--primary) / 0.3), hsl(var(--accent) / 0.3));
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
@@ -100,7 +100,7 @@
     width: 600px;
     height: 600px;
     border-radius: 50%;
-    background: radial-gradient(circle, hsl(var(--primary) / 0.15), transparent 70%);
+    background: radial-gradient(circle, hsl(24 60% 35% / 0.08), transparent 70%);
     filter: blur(80px);
     pointer-events: none;
   }
@@ -109,10 +109,10 @@
   }
   .btn-glow {
     @apply relative overflow-hidden;
-    box-shadow: 0 0 20px -5px hsl(var(--primary) / 0.4);
+    box-shadow: 0 4px 16px -4px hsl(24 60% 35% / 0.2);
   }
   .btn-glow:hover {
-    box-shadow: 0 0 30px -5px hsl(var(--primary) / 0.6);
+    box-shadow: 0 6px 24px -4px hsl(24 60% 35% / 0.3);
   }
 }
 
